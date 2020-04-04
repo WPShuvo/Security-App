@@ -19,10 +19,8 @@ class LogIn extends Component {
 
         firebase.auth().signInWithEmailAndPassword(email, password)
             .then(() => {
-                console.log('SIGNING IN')
                 console.log(firebase.auth().currentUser.uid)
-                // firebase.auth().currentUser.uid === '3zwvARvxfwWGr4XHi3ETqLwl3qB3' ? this.props.navigation.navigate('Root') : this.props.navigation.navigate('Test');
-                this.props.navigation.navigate('Admin');
+                firebase.auth().currentUser.uid === '3zwvARvxfwWGr4XHi3ETqLwl3qB3' ? this.props.navigation.navigate('Admin') : this.props.navigation.navigate('Home');
             }) 
             .catch(() => {
                 this.setState({ error: 'Access Denied'});
