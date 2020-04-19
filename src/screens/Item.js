@@ -21,11 +21,11 @@ class Item extends Component
     render() {
         return (
             <View style={styles.item}>
-              <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+              <View style={{ justifyContent: 'space-between' }}>
                     <Text style={styles.title}>{this.props.title}</Text>
                     <RNPickerSelect
                         style={styles.pickerStyle}
-                        placeholder={{label: 'Select level', value: null}}
+                        placeholder={{label: 'Select level', value: '1'}}
                         onValueChange={(value) => this.updateLevel(value)}
                         items={[
                             { label: '1', value: '1' },
@@ -61,6 +61,7 @@ class Item extends Component
     },
     pickerStyle: {
         fontSize: 28,
+        zIndex: 9,
     }
   });
 

@@ -75,7 +75,7 @@ class LogIn extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 200,
+    paddingTop: 100,
     paddingHorizontal: 20,
   },
   input: {

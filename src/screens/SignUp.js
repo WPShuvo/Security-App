@@ -9,7 +9,7 @@ class SignUp extends Component {
         age: '',
         gender: '',
         email: '',
-        level: 0,
+        level: 1,
         password: '',
         error: '',
         emailError: null,
