@@ -60,12 +60,17 @@ class TopSecret extends Component {
                 >
                     <Text>Back</Text>
                 </TouchableOpacity>
-                <FlatList
+                {level.level === 1 ?
+                    <FlatList
                     data={this.state.data}
                     renderItem={({ item }) => <Item title={item.message} email={item.email} id={item.key} />}
                     keyExtractor={item => item.key}
-                />
-                {level.level === 1 ?
+                    />
+                    : 
+                    null
+                }
+                
+                {level.level >= 1 ?
                     <View style={styles.bottom}>
                         <TextInput
                                 value={this.state.text}

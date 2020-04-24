@@ -45,7 +45,7 @@ class SignUp extends Component {
         return (
             <ScrollView contentContainerStyle={{flexGrow: 1}}>
                 <View style={styles.container}>
-                    <Text style={{ fontSize: 30, fontWeight: 'bold', textAlign: 'center', paddingBottom: 50 }}>Security App</Text>
+                    <Text style={{ fontSize: 30, fontWeight: 'bold', textAlign: 'center', paddingBottom: 30 }}>Security App</Text>
                     <TextInput
                         value={this.state.name}
                         onChangeText={name => this.setState({ name })}
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     fontSize: 16
   },
   button: {
-      backgroundColor: '#27bcf2',
+      backgroundColor: '#FFB266',
       height: 50,
       margin: 15,
       justifyContent: 'center',

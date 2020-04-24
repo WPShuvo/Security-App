@@ -60,7 +60,7 @@ class TopSecret extends Component {
                 >
                     <Text>Back</Text>
                 </TouchableOpacity>
-                {level.level > 2 ? 
+                {level.level <= 3 ? 
                     <FlatList
                     data={this.state.data}
                     renderItem={({ item }) => <Item title={item.message} email={item.email} id={item.key} />}
@@ -69,7 +69,7 @@ class TopSecret extends Component {
                     :
                     null
                 }
-                {level.level <= 3 ?
+                {level.level >= 3 ?
                     <View style={styles.bottom}>
                         <TextInput
                                 value={this.state.text}

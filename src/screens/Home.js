@@ -62,25 +62,25 @@ class Home extends Component {
                         style={styles.item}
                         onPress={() => this.props.navigation.navigate('TopSecret', { level: JSON.parse(this.state.level) })}
                     >
-                        <Text style={styles.fileText}>Top Secret</Text>
+                        <Text style={styles.fileText}>High Integrity</Text>
                     </TouchableOpacity>
                     <TouchableOpacity
                         style={styles.item}
                         onPress={() => this.props.navigation.navigate('Secret', { level: JSON.parse(this.state.level) })}
                     >
-                        <Text style={styles.fileText}>Secret</Text>
+                        <Text style={styles.fileText}>Some Integrity</Text>
                     </TouchableOpacity>
                     <TouchableOpacity
                         style={styles.item}
                         onPress={() => this.props.navigation.navigate('Confidential', { level: JSON.parse(this.state.level) })}
                     >
-                        <Text style={styles.fileText}>Confidential</Text>
+                        <Text style={styles.fileText}>Suspicious</Text>
                     </TouchableOpacity>
                     <TouchableOpacity
                         style={styles.item}
                         onPress={() => this.props.navigation.navigate('Unclassified', { level: JSON.parse(this.state.level) })}
                     >
-                        <Text style={styles.fileText}>Unclassified</Text>
+                        <Text style={styles.fileText}>Garbage</Text>
                     </TouchableOpacity>
                 </View>
             </View>
