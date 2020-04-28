@@ -6,3 +6,7 @@ Running the project:
 2.	cd directory
 3.	npm install
 4.	npx react-native start
+
+BLP App: Master branch
+Biba App: biba branch
+Switch braches: git checkout branchname
