@@ -10,5 +10,7 @@ Running the project:
 
 
 BLP App: Master branch
+
 Biba App: biba branch
+
 Switch braches: git checkout branchname
